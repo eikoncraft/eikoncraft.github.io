@@ -1,0 +1,20 @@
+<dom-module id="inline-browser" attributes="link">
+  <template>
+    <div class="sp-slider-top-block">
+      <div class="sp-slider-top-block__left"></div>
+      <div class="sp-slider-top-block__center">
+        <a href="http://eikoncraft.com/assets/elements/{{link}}" target="_blank" class="sp-slider-top-block__link">{{link}}</a>
+      </div>
+      <div class="sp-slider-top-block__right"></div>
+    </div>
+    <content></content>
+    <div class="sp-slider-bottom-block"></div>
+  </template>
+ <script>
+    Polymer({
+      is:'inline-browser', 
+      properties:{
+      link: 'eikoncraft.com'      
+    }});
+  </script>
+</dom-module>
