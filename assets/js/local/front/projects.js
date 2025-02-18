@@ -5,7 +5,7 @@ $(document).ready(function () {
     },3000);
 
     var $header = $(".g-header"),
-        imgPath = "assets/img/",
+        imgPath = "/assets/img/",
         $headerNode = $header.find(".g-header-state").find(".g-logo img.g-logo-toggle__mod-img").attr("src", imgPath + "logo_white.png").parents(".g-header-state"),
         //$.unique() only for DOM elements
         headerColorSchemes = uniqueInArray(
