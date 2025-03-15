@@ -503,7 +503,8 @@ html body {
   font-family: "Open Sans", sans-serif;
 }
 .g-wrapper {
-  overflow: hidden;
+  min-height: 100%;
+  height: 100vh;
 }
 .g-footer {
   -webkit-box-sizing: border-box;

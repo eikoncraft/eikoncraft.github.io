@@ -14,6 +14,7 @@ $(document).ready(function(){
 
     var holdScroll = -1;
     var holdScrollDirection = '';
+    /*
     $(window).catchScroll(function (position, api) {
         var holdScrollTimeout = function(direction, api) {
             if (holdScrollDirection == direction && holdScroll != -1) {
@@ -38,7 +39,6 @@ $(document).ready(function(){
             api.type == 'touch' ||
             (api.type == 'scrollbar' && api.isStoppable) ||
             api.type == 'wheel') {
-            //����������� ��������������� ������� + ������
             if (position.direction == "down") {
                 if (!wrapper.hasMod("scrolled")) {
                     wrapper.setMod("scrolled");
@@ -56,7 +56,7 @@ $(document).ready(function(){
                     }
                 }
             }
-        } else {//���������� � ����������������� �������
+        } else {
             if (position.direction == "down") {
                 if (wrapper.hasMod("scrolled")) {
                     clearTimeout(holdScroll);
@@ -72,6 +72,7 @@ $(document).ready(function(){
             }
         }
     });
+    */
     var video = $("video");
     video.each(function(ind, video){
         $(video).wrap($("<div>", {"class": "sp-video", "style": $(video).attr("style") + "; width:" + $(video).attr("width")})).removeAttr("style").css({"width": "100%" }).parent().append(Handlebars.compile($("#video-button").html()));
