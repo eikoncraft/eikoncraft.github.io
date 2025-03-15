@@ -213,7 +213,7 @@
             });
             placeholder.on('mouseup', function(event){
                 if (midClick && !midMBScroll && event.button == 1) {
-                    midMBScroll = true;//начинается скролл средней кнопкой мыши (нажатием на скролл)
+                    midMBScroll = true;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
                 } else {
                     midMBScroll = false;
                     midClick = true;
@@ -251,7 +251,7 @@
                     } else {
                         if (browserStoppable && (!scrollbar || scrollbarClick || (scrollbar && catchScrollbar))) {
                             scrollbarClick = false;
-                            scroll.api.scroll(prevY);//некорректно работает в IE & Firefox
+                            scroll.api.scroll(prevY);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ IE & Firefox
                         } else {
                             prevY = placeholder.scrollTop();
                         }

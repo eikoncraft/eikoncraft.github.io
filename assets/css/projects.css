@@ -63,24 +63,18 @@
   background-color: rgba(255, 255, 255, 0.6);
 }
 .p-slide_type_black.p-slide_substrate .p-info-slide:after {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
 }
 .p-slide_type_contrast.p-slide_substrate .p-info-slide {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .p-slide_type_contrast.p-slide_substrate .p-info-slide:after {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 .p-slide_type_white.p-slide_substrate .p-info-slide {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .p-slide_type_white.p-slide_substrate .p-info-slide:after {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 .p-single:after {

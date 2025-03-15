@@ -83,7 +83,7 @@
 }
 .s-description__title {
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 52px;
   font-weight: 300;
 }
@@ -96,7 +96,7 @@
 .s-description__text-block {
   margin: 0;
   padding-top: 14px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 300;
 }

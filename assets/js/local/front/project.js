@@ -38,7 +38,7 @@ $(document).ready(function(){
             api.type == 'touch' ||
             (api.type == 'scrollbar' && api.isStoppable) ||
             api.type == 'wheel') {
-            //непрерывные останавливаемые скроллы + колесо
+            //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ + пїЅпїЅпїЅпїЅпїЅпїЅ
             if (position.direction == "down") {
                 if (!wrapper.hasMod("scrolled")) {
                     wrapper.setMod("scrolled");
@@ -56,7 +56,7 @@ $(document).ready(function(){
                     }
                 }
             }
-        } else {//дискретные и неостанавливаемые скроллы
+        } else {//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             if (position.direction == "down") {
                 if (wrapper.hasMod("scrolled")) {
                     clearTimeout(holdScroll);
