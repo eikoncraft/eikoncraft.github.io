@@ -51,6 +51,7 @@ $(document).ready(function () {
 
     $("#contact-form-btn").on("click", function () {
         toggleFooter("show");
+        setTimeout(contactFormSubmitted, 1000)
     });
 
     $(".g-footer-big__close").on("click", function () {
@@ -168,6 +169,19 @@ $(document).ready(function () {
         lastScrollTop = st;
     });
 
+    window.contactFormSubmitted = function () {
+        var $this = $('.g-contact-form');
+        var $title = $('.g-contact-form__title');
+        var $form = $this.find('form');
+        console.log($form);
+        $this.addClass('g-contact-form_submitted');
+        setTimeout(function(){
+            var template = Handlebars.compile($("#contact-success-msg").html());
+            $title.html(template({email: ''}));
+            $form.css('visibility', 'hidden');
+        }, 600);
+    }
+
     $('.g-contact-form').on('submit', function(){
         var $this = $(this);
         var $title = $('.g-contact-form__title');
@@ -179,12 +193,6 @@ $(document).ready(function () {
             data: $form.serialize(),
             success: function (data) {
                 console.log(data);
-                $this.addClass('g-contact-form_submitted');
-                setTimeout(function(){
-                    var template = Handlebars.compile($("#contact-success-msg").html());
-                    $title.html(template({email: email}));
-                    $form.css('visibility', 'hidden');
-                }, 600);
             },
             error: function (err) {
                 console.log(err);
